@@ -121,6 +121,11 @@ def application(environ, start_response):
             return ['Not logged in. <a href="/">Login</a>'.encode()]
     elif path == '/':
             login_form = '''
+                <style>
+                p.a {
+                    font: monospace;
+                }
+                </style>
                 <form action= "/" style="background-color:pink">
                     <h1>Ready for some Multiplication?</h1>
                     <h2>Let's play!!!<h2>
